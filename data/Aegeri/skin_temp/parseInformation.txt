@@ -1,0 +1,10 @@
+Datalakes Parse Parameters 
+The table below maps the physical parameter to its given axis. 
+ 
+Axis | Parameter | NetCDF Parameter Name | Unit | Description 
+x | Time | time | seconds since 1970-01-01 00:00:00 | Time 
+y2 | Binary Error Mask | time_qual | 0 = nothing to report, 1 = more investigation | data_binary_mask has 1 where condition X is met, 0 elsewhere. 0 = high quality, 1 = low quality.  
+y3 | Binary Error Mask | skin_temp_qual | 0 = nothing to report, 1 = more investigation | data_binary_mask has 1 where condition X is met, 0 elsewhere. 0 = high quality, 1 = low quality.  
+y4 | Binary Error Mask | surface_temp_qual | 0 = nothing to report, 1 = more investigation | data_binary_mask has 1 where condition X is met, 0 elsewhere. 0 = high quality, 1 = low quality.  
+y | Skin Temperature | skin_temp | °C | null 
+y1 | Surface temperature | surface_temp | °C | Temperature of the top-most sensor 
