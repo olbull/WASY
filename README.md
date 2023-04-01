@@ -1,5 +1,7 @@
 # WASY
+This is a project for the course GEO374
 
+DATACLEANING
 ## Description of the Class Data
 #### The class has 2 imputs: A Pandas DataFrame and a name:
 
