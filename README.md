@@ -1,11 +1,11 @@
-#Water System
+# Water System
 
 This is a project for the course GEO374.
 
 Data: https://www.datalakes-eawag.ch/
 
 
-#File DataCleaning
+# File DataCleaning
 ## Description of the Class Data
 #### The class has 2 imputs: A Pandas DataFrame and a name:
 
