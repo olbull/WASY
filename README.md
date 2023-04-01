@@ -10,7 +10,7 @@ Data: https://www.datalakes-eawag.ch/
 #### The class has 2 imputs: A Pandas DataFrame and a name:
 
 --> To create an instance ot the Class Data, use following lines:
-```json
+```
 dataframe = pd.read_csv("PATH TO DATA")
 name="DESIRED NAME"
 LakeAegeri=Data(dataframe,name)
