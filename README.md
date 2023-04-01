@@ -1,12 +1,16 @@
-# WASY
-This is a project for the course GEO374
+# Water System
 
-DATACLEANING
+This is a project for the course GEO374.
+
+Data: https://www.datalakes-eawag.ch/
+
+
+# File DataCleaning
 ## Description of the Class Data
 #### The class has 2 imputs: A Pandas DataFrame and a name:
 
 --> To create an instance ot the Class Data, use following lines:
-```json
+```
 dataframe = pd.read_csv("PATH TO DATA")
 name="DESIRED NAME"
 LakeAegeri=Data(dataframe,name)
