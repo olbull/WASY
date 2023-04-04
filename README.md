@@ -40,13 +40,13 @@ This method will check the stationarity using the Augmented Dickey-Fuller Test (
 
 ##### <span style=color:#d9f0a3>3. INSTANCE_CLASS_DATA.detect_outlier(self, column, splines_imputation="y", PERIOD=24, display_plots="y"):</span>
 
-This method will clean the data with help of the seasonal decomposition of the specified column (column=COLUMN_NAME).
+This method will clean the data with help of the seasonal decomposition of the specified column (column=COLUMN_NAME).<br>
 
-The method returns an instance of the class Data (with the whole DataFrame with the (timeseries) cleaned column). The physical impossible outliers are not cleaned in this method.
+The method returns an instance of the class Data (with the whole DataFrame with the (timeseries) cleaned column). The physical impossible outliers are not cleaned in this method.<br>
 
-If you want the more "fancy" Splines Imputation, use splines_imputation="y". It looks at outlier and puts a mathematical function over the dataset. The method estimates values that minimize overall curvature, thus obtaining a smooth surface passing through the input points. Spline interpolation is computationally efficient and can be used to interpolate large datasets quickly and accurately. Otherwise, use knn_imputation="n" to use the simple imputer: It looks at the normalized residuals and sets >3 values to 3 and <-3 values to -3. In the last step.
+If you want the more "fancy" Splines Imputation, use splines_imputation="y". It looks at outlier and puts a mathematical function over the dataset. The method estimates values that minimize overall curvature, thus obtaining a smooth surface passing through the input points. Spline interpolation is computationally efficient and can be used to interpolate large datasets quickly and accurately. Otherwise, use knn_imputation="n" to use the simple imputer: It looks at the normalized residuals and sets >3 values to 3 and <-3 values to -3. In the last step.<br>
 
-PERIOD: If you want to change the period of the data, change the PERIOD parameter.
+PERIOD: If you want to change the period of the data, change the PERIOD parameter.<br>
 
 Display plots in the notebook: If you want to display the plots, use display_plots="y", else display_plots="n"
 <br>
@@ -71,6 +71,20 @@ This method will remove the statistical outliers of a column. Note, that this co
 
 If the Z-Score (COLUMN_VALUE-mean/std) exceeds 3 (or -3), the point will be considered as an outlier.
 -> If you want to impute the missing data with the Splines Imputation, use imputation = "y", else imputation = "n". The Spline Imputation looks at the missing points (here the outliers) and puts a mathematical function over the dataset. The method estimates values that minimize overall curvature, thus obtaining a smooth surface passing through the input points. Spline interpolation is computationally efficient and can be used to interpolate large datasets quickly and accurately.
+<br>
+<br>
 
+##### <span style=color:#d9f0a3>6. Instance_CLASS_DATA.rename_columns(self,columns={"y": "skin_temp", "y1": "bulk_temp"}): </span>
 
+This method will rename the columns of the instance. With a dictionary, the columns can be added by {"name_before":"name_after",...}
+<br>
+<br>
 
+##### <span style=color:#d9f0a3>7. Instance_CLASS_DATA.create_histogram(self,column_name): </span>
+This method creates a histogram from the selected column. It also adds the Kernel Denstity Estimation (KDE) onto the histogram.
+<br>
+<br>
+##### <span style=color:#d9f0a3>8. create_paiplot(self,column_names=[]) </span>
+This method will create a pairplot of the selected columns (column_names=["column1","column2",...]). <br> If the parameter column_names is not defined, the whole dataset will be plotted as a pairplot.
+<br>
+<br>
