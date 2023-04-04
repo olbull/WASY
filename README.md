@@ -1,7 +1,7 @@
 # <span style=color:#FA7528> Water System <span>
 
 This is a project for the course GEO374.
-<img src=”![BILD](data/output_png/rolling_mean_title.png)”><br>
+<img src=”![BILD](./data/output_png/rolling_mean_title.png)”><br>
 
 Data: https://www.datalakes-eawag.ch/
 
